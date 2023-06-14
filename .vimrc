@@ -49,9 +49,6 @@ inoremap <Right> <esc>a
 " Sets how many lines of history VIM has to remember
 set history=500
 
-" Enable Pathogen
-execute pathogen#infect()
-
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
@@ -235,6 +232,11 @@ map <leader>p "*p
 " Mapping :move +/- 2 to Alt + up and Alt + down
 nnoremap <A-Up>     :m-2<CR>
 nnoremap <A-Down>   :m+<CR>
+
+"Mapping jk to esc
+
+inoremap jk <esc>
+inoremap <esc> <nop>
 
 " P>
 " P> 
